@@ -81,4 +81,4 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         with:
-          charts_repo_url: 'https://posthog.github.io/charts-clickhouse/'
+          charts_repo_url: 'https://vase.github.io/charts-clickhouse/'
