@@ -144,11 +144,11 @@ The following table lists the configurable parameters of the PostHog chart and t
 | clickhouse.user | string | `"admin"` | Clickhouse user |
 | clickhouse.password | string | `"a1f31e03-c88e-4ca6-a2df-ad49183d15d9"` | Clickhouse password |
 | clickhouse.host | string | `nil` | Set if not installing clickhouse operator |
+| clickhouse.customStorageClass | string | `""` | Custom Storage Class in k8s |
 | clickhouse.replication | bool | `false` |  |
 | clickhouse.secure | bool | `false` |  |
 | clickhouse.verify | bool | `false` |  |
 | clickhouse.async | bool | `false` |  |
-| clickhouse.customStorageClass | string | `""` | URL for zookeeper. servers: - host: posthog-posthog-zookeeper port: 2181 |
 | metrics.enabled | bool | `false` | Start an exporter for posthog metrics |
 | metrics.livenessProbe | object | `{"enabled":true,"failureThreshold":3,"initialDelaySeconds":30,"periodSeconds":5,"successThreshold":1,"timeoutSeconds":2}` | Metrics pods livenessProbe settings |
 | metrics.readinessProbe | object | `{"enabled":true,"failureThreshold":3,"initialDelaySeconds":30,"periodSeconds":5,"successThreshold":1,"timeoutSeconds":2}` | Metrics pods readinessProbe settings |
